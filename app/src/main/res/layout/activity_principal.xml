@@ -7,4 +7,27 @@
     android:layout_height="match_parent"
     tools:context="castro.rodriguez.fernando.carros.Principal">
 
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/Seleccionar"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+        <ListView
+            android:id="@+id/lstSeleccionar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
