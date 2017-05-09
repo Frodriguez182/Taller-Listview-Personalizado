@@ -2,6 +2,10 @@ package castro.rodriguez.fernando.carros;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ListView;
+
+import castro.rodriguez.fernando.carros.AdaptadorCarro;
+import castro.rodriguez.fernando.carros.Datos;
 
 public class Listar extends AppCompatActivity {
 
@@ -9,5 +13,34 @@ public class Listar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listar);
+
+        ListView listaCarros = (ListView)findViewById(R.id.listCarros);
+
+        AdaptadorCarro AdaptadorCarro = new AdaptadorCarro(this, Datos.getCarros());
+        listaCarros.setAdapter(AdaptadorCarro);
     }
+
+    /*
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_listar, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+    */
 }
