@@ -94,7 +94,7 @@ public class Registrar extends AppCompatActivity {
             precioFinal = precio.getText().toString().trim();
 
             Random rnd = new Random();
-            fotoFinal = rnd.nextInt(5-0);
+            fotoFinal = rnd.nextInt(3-0);
 
 
             Carro c = new Carro(vector[fotoFinal], placaFinal, marcaFinal, modeloFinal, colorFinal, precioFinal);

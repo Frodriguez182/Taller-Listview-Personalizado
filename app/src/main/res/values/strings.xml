@@ -1,10 +1,9 @@
 <resources>
-    <string name="app_name">CARROS</string>
+    <string name="app_name">Carros</string>
 
-    <string name="hello_world">Hello world!</string>
+
     <string name="action_settings">Settings</string>
 
-    <!--Strings de la activity Opciones-->
     <string name="tituloOpciones">OPCIONES</string>
     <string-array name="lstOpciones">
         <item>@string/registrar</item>
@@ -15,7 +14,6 @@
     <string name="listar">Listar</string>
     <string name="reportar">Informes</string>
 
-    <!--Strings de la activity Registrar-->
     <string name="title_activity_registrar">Registrar</string>
     <string name="lblPlaca">Placa</string>
     <string name="lblMarca">Marca</string>
@@ -43,13 +41,14 @@
 
     </string-array>
     <string-array name="color_spinner">
-        <item>@string/amarillo</item>
+        <item>@string/negro</item>
         <item>@string/rojo</item>
-        <item>@string/azul</item>
+        <item>@string/blanco</item>
+
     </string-array>
-    <string name="amarillo">Amarillo</string>
+    <string name="negro">negro</string>
+    <string name="blanco">blanco</string>
     <string name="rojo">Rojo</string>
-    <string name="azul">Azul</string>
     <string name="msjTitulo">Notificación</string>
     <string name="msjCuerpo">Carro guardado correctamente</string>
     <string name="msjError1Cuerpo">Los 3 primeros caracteres de la placa deben ser letras</string>
@@ -57,10 +56,8 @@
     <string name="msjError3Cuerpo">El campo placa no puede estar vacío</string>
     <string name="msjError4Cuerpo">El campo placa debe contener 3 caracteres y 3 Numeros</string>
 
-    <!--Strings de la activity Listar-->
     <string name="title_activity_listar">Listar</string>
 
-    <!--Strings de la activity Reportar-->
     <string name="title_activity_reportar">Reportar</string>
     <string name="tituloInformes">INFORMES</string>
     <string-array name="Informes_array">
@@ -73,34 +70,24 @@
     <string name="informe_2">No. de Carros registrados por marca</string>
     <string name="informe_3">No. de Carros registrados por color</string>
 
-    <!--Strings de los botones-->
     <string name="btnRegistrar">Registrar</string>
     <string name="btnLimpiar">Limpiar</string>
 
-    <!--Strings de la activity Informe_1-->
+
     <string name="title_activity_informe_1" translatable="false">Informe_1</string>
     <string name="lblInforme1">La cantidad de carros registrados es: </string>
 
-    <!--Strings de la activity Informe_2-->
     <string name="title_activity_informe_2" translatable="false">Informe_2</string>
     <string name="lblInforme2">CARROS REGISTRADOS POR MARCA</string>
     <string name="lblInforme2_1">Carros registrados Kia: </string>
     <string name="lblInforme2_2">Carros registrados Chevrolet: </string>
     <string name="lblInforme2_3">Carros registrados Renault: </string>
 
-    <!--Strings de la activity Informe_3-->
     <string name="title_activity_informe_3" translatable="false">Informe_3</string>
     <string name="lblInforme3">CARROS REGISTRADOS POR COLOR</string>
-    <string name="lblInforme3_1">Carros registrados de color amarillo:</string>
+    <string name="lblInforme3_1">Carros registrados de color negro:</string>
     <string name="lblInforme3_2">Carros registrados de color rojo:</string>
-    <string name="lblInforme3_3">Carros registrados de color azul:</string>
+    <string name="lblInforme3_3">Carros registrados de color blanco:</string>
 
-    <!--Strings de la activity Informe_4-->
-    <string name="title_activity_informe_4" translatable="false">Informe_4</string>
 
-    <!--Strings de la activity Informe_5-->
-    <string name="title_activity_informe_5" translatable="false">Informe_5</string>
-
-    <!--Strings de la activity Informe_6-->
-    <string name="title_activity_informe_6" translatable="false">Informe_6</string>
 </resources>
