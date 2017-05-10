@@ -12,8 +12,8 @@ import castro.rodriguez.fernando.carros.Datos;
 public class Informe_3 extends AppCompatActivity {
 
     private ArrayList<Carro> carroArrayList;
-    private TextView amarilloText, rojoText, azulText;
-    int amarillo = 0, rojo = 0, azul = 0;
+    private TextView negroText, rojoText, blancoText;
+    int negro = 0, rojo = 0, blanco = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,25 +21,25 @@ public class Informe_3 extends AppCompatActivity {
         setContentView(R.layout.activity_informe_3);
 
         carroArrayList = Datos.getCarros();
-        amarilloText = (TextView)findViewById(R.id.txtCarrosAmarillos);
+        negroText = (TextView)findViewById(R.id.txtCarrosnegros);
         rojoText = (TextView)findViewById(R.id.txtCarrosRojos);
-        azulText = (TextView)findViewById(R.id.txtCarrosAzules);
+        blancoText = (TextView)findViewById(R.id.txtCarrosblancos);
 
         for (int i = 0; i < carroArrayList.size(); i++) {
-            if (carroArrayList.get(i).getColor().equals("Amarillo") || carroArrayList.get(i).
-                    getColor().equals("Yellow")){
-                amarillo++;
+            if (carroArrayList.get(i).getColor().equals("Negro") || carroArrayList.get(i).
+                    getColor().equals("Black")){
+                negro++;
             }else if (carroArrayList.get(i).getColor().equals("Rojo") || carroArrayList.get(i).
                     getColor().equals("Red")){
                 rojo++;
             }else{
-                azul++;
+                blanco++;
             }
         }
 
-        amarilloText.setText(String.valueOf(amarillo));
+        negroText.setText(String.valueOf(negro));
         rojoText.setText(String.valueOf(rojo));
-        azulText.setText(String.valueOf(azul));
+        blancoText.setText(String.valueOf(blanco));
     }
 
 
